@@ -29,12 +29,26 @@ public class VariableTester {
         
         String s1 = new String("Hello");
         String s2 = "HAHAHAHAHAHAHA";
-        
         int len = s1.length();
         System.out.println("len:"+len);
         System.out.println(s1.charAt(0));
         
-        
+        float w = 5.0f;
+        int x = 5;
+        int y = 3;
+        int z = x / y;
+        float z2 = w / y;
+        System.out.println(z);
+        System.out.println((int)w / y);
+        System.out.println(z2);
+        System.out.println(x << 1);
+        System.out.println(x >> 1);
+        x = x + 1;
+        System.out.println(x);
+        x--;
+        System.out.println(x);
+        x += 2;
+        System.out.println(x);
         
 	}
 
