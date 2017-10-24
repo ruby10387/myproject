@@ -17,12 +17,23 @@ public class VariableTester {
         System.out.println(pass);
         
         String s = new String("Hello");
-        
         Random r = new Random();
         System.out.println(r.nextInt(6)+1);
+        int n1 = r.nextInt(6)+1;
+        int n2 = r.nextInt(6)+1;
+        int n3 = r.nextInt(6)+1;
         System.out.println(4>3);
         System.out.println(3<=2);
         System.out.println(5==5);
+        
+        
+        String s1 = new String("Hello");
+        String s2 = "HAHAHAHAHAHAHA";
+        
+        int len = s1.length();
+        System.out.println("len:"+len);
+        System.out.println(s1.charAt(0));
+        
         
         
 	}
