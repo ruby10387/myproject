@@ -20,7 +20,18 @@ public class Niner {
 		        System.out.println("2 x " + i + " = " + (2*i));
 		      } 
           }
-		
+		  System.out.println(" ");
+//        九九乘法表		
+//		  int n = 2;
+		  for (int n=2; n<10 ;n=n+1){
+			  for (int i=1; i<=9 ;i=i+1){
+				  System.out.print(n + " x " + i + " = ");
+				  if ((n*i) < 10){
+					  System.out.print(" ");
+				  }
+				  System.out.println((n*i));
+			  }
+			  System.out.println();
+		  }
 	}
-
 }
