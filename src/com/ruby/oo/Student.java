@@ -6,6 +6,7 @@ public class Student {
  *  沒寫只能在同一package使用
  *  protected:只提供給子類別和同package
 */
+	
 //	屬性(property或field)在此類別接可用
 //	instance variable(物件階層)
 	protected int english;
