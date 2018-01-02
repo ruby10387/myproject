@@ -20,5 +20,5 @@ public class Tester {
 		GraduateStudent gstu = new GraduateStudent();
 		gstu.print();
 	}
-
+	
 }

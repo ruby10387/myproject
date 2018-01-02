@@ -1,9 +1,14 @@
 package com.ruby.oo;
 
 public class Student {
+/*	public:在不同package的class也可使用
+ *  private:只能在所在類別使用
+ *  沒寫只能在同一package使用
+ *  protected:只提供給子類別和同package
+*/
 //	屬性(property或field)在此類別接可用
 //	instance variable(物件階層)
-	int english;
+	protected int english;
 	int math;
 	int chinese;
 	String name;
@@ -29,12 +34,12 @@ public class Student {
 	}
 	
 
-//	static method只能用static成員
+//	static method只能使用static成員
 	public static void method(){
 		System.out.println("Hello");
 	}
 //  方法(instance method)
-	public void print(){
+	protected void print(){
 		System.out.println(pass);
 		System.out.println(english+"\t"+math+"\t"+chinese);
 	}

@@ -7,6 +7,7 @@ public class Drink {
 		this.key = key;
 		this.price = price;
 	}
+	
 }
 
 
