@@ -1,29 +1,29 @@
 package com.java2.object;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
-public class Poker {
+public class Poker2 {
 	Random random = new Random();
-	int cards[] = new int[52];
 	String flowers = "SHDC";
-	public Poker(){
-		for (int i=0;i<cards.length;i++){
-			cards[i] = i;
+	List<Integer> cards = new ArrayList<>();
+	public Poker2(){
+		for (int i=0;i<cards.size();i++){
+			cards.add(i);
 			System.out.println((i%13)+i+""+flowers.charAt(i/13));
 		}
 	}
 	
 	public void shuffle(){
-		for(int i =0; i<cards.length; i++){
+		for(int i =0; i<cards.size(); i++){
 			int r = random.nextInt(52);
-			int temp = cards[i];
-			cards[i] = cards[r];
-			cards[r] = temp;
+			cards.set(i,r);
 		}
 	}
 	public void show(){
-		for(int i=0; i<cards.length; i++){
-			int c = cards[i];
+		for(int i=0; i<cards.size(); i++){
+			int c = cards.get(i);
 			System.out.print((c%13)+1+""+(flowers.charAt(c/13))+"");
 			if(i%13==0){
 				System.out.println();
