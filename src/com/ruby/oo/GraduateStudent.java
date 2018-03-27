@@ -11,8 +11,8 @@ public class GraduateStudent extends Student{
 		super();
 	}
 	
-//確認自己有複寫正確
-//複寫內容只可放大不能縮小
+//確認自己有覆寫正確
+//覆寫內容只可放大不能縮小
 	@Override
 	public void print(){
 		System.out.println(pass);
