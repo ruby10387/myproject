@@ -43,6 +43,7 @@ public class Sogo {
 						try {
 							int type = Integer.parseInt(token[0]);
 							int amount = Integer.parseInt(token[1]);
+							Customer customer = Customer.getCustomer(type,amount);
 							Sales sales = new Sales(type, amount);
 							list.add(sales);
 						} catch (NumberFormatException e) {
@@ -58,17 +59,6 @@ public class Sogo {
 				}
 				for (Sales sales: list){
 					Customer customer = null;
-					switch(sales.type){
-					case 1: 
-						customer = new Customer(sales.getAmount());
-						break;
-					case 2:
-						customer = new SilverCustomer(sales.getAmount());
-						break;
-					case 3:
-						customer = new GoldenCustomer(sales.getAmount());
-						break;
-					}
 					customer.print();
 				}
 				break;
