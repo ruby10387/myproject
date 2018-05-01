@@ -2,7 +2,7 @@ package com.java2.object;
 
 import java.util.Scanner;
 
-public class ABGname {
+public class ABGame {
 
 	public static void main(String[] args) {
 		String secret = "9873";

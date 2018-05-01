@@ -43,7 +43,7 @@ public class Sogo {
 						try {
 							int type = Integer.parseInt(token[0]);
 							int amount = Integer.parseInt(token[1]);
-							Customer customer = Customer.getCustomer(type,amount);
+//							Customer customer = Customer.getCustomer(type,amount);
 							Sales sales = new Sales(type, amount);
 							list.add(sales);
 						} catch (NumberFormatException e) {
