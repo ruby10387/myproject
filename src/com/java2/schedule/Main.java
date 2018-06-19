@@ -1,5 +1,8 @@
 package com.java2.schedule;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 	/* 有一文字檔儲存了課表資料(schedule.txt)
 	 * 請讀取資料後，設計程式可檢查是否有空檔?
@@ -11,14 +14,17 @@ public class Main {
 	 * 請輸入時(0-24):14
 	 * 【有課: C004 English 到 16時 】
 	 */
-	
-	public void on(){
+	List<Course> courses = new ArrayList<>();
+	public Main(){
 		System.out.print("請輸入星期:");
 		System.out.print("請輸入時:");
 	}
+	public void readCourses(){
+		
+	}
 	
 	public static void main(String[] args) {
-		
+		new Main();
 	}
 
 }
